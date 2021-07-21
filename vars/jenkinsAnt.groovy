@@ -19,7 +19,7 @@ def call(String repoUrl) {
         }
         stage('deploy'){
             steps{
-                nexusPublisher nexusInstanceId: 'localnexus3', nexusRepositoryId: 'maven-releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\first-project-ant\\target\\roshambo.war']], mavenCoordinate: [artifactId: 'antProject', groupId: 'com.antproject', packaging: 'war', version: '1.2']]]
+                nexusPublisher nexusInstanceId: 'localnexus3', nexusRepositoryId: 'maven-releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\first-project-ant\\target\\roshambo.war']], mavenCoordinate: [artifactId: 'antProject', groupId: 'com.antproject', packaging: 'war', version: '1.5']]]
             }
         }
        }

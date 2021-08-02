@@ -1,3 +1,4 @@
-def call(String name = 'User') {
-	echo "Welcome, ${name}."
+def gitBranch(String repoUrl,String branch){
+	git branch: '${branch}',
+          url: "${repoUrl}"
 }

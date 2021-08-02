@@ -1,4 +1,4 @@
-def gitBranch(String repoUrl,String branch){
-	git branch: '${branch}',
-          url: "${repoUrl}"
+def gitBranch(String repoUrl){
+	git '${repoUrl}'
+          
 }
